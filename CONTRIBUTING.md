@@ -6,7 +6,7 @@ Thank you for your interest in contributing to bloom-sift!
 
 ### Prerequisites
 
-- Node.js 18 or higher (see `.nvmrc`)
+- Node.js 20 or higher (see `.nvmrc`)
 - npm
 
 ### Getting Started
