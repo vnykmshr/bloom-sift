@@ -1,0 +1,20 @@
+# Changelog
+
+All notable changes to this project will be documented in this file.
+
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [0.1.0] - 2024-11-20
+
+### Added
+
+- Initial release
+- `BloomSift` class with optimal parameter calculation
+- 128-bit MurmurHash3 with Kirsch-Mitzenmacher double hashing technique
+- `add()` and `has()` methods for string and Uint8Array inputs
+- `serialize()` and `deserialize()` for persistence
+- `count`, `size`, and `hashCount` properties
+- Comprehensive test suite with 22 tests
+- TypeScript support with full type definitions
+- ESM and CommonJS dual build support

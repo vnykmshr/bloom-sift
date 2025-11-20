@@ -21,11 +21,14 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "test": "vitest run",
     "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "lint": "eslint src test",
-    "format": "prettier --write src test"
+    "format": "prettier --write src test",
+    "bench": "tsx bench/index.ts",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
     "bloom-filter",
@@ -36,7 +39,7 @@
     "murmur",
     "data-structure"
   ],
-  "author": "",
+  "author": "vnykmshr",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -52,7 +55,10 @@
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@types/node": "^24.10.1",
+    "@vitest/coverage-v8": "^4.0.10",
     "prettier": "^3.6.2",
+    "tsup": "^8.5.1",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.47.0",
     "vitest": "^4.0.10"
